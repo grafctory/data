@@ -19,9 +19,6 @@
       "URL": "https://developer.mozilla.org/en-US/docs/Web/API/URL"
     },
     "typescript": {
-      "Error": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
-      "RangeError": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
-      "TypeError": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
       "URL": "https://developer.mozilla.org/en-US/docs/Web/API/URL"
     }
   },

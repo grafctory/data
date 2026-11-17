@@ -8,14 +8,6 @@
     },
     "@metreeca/http": {
       "*": "https://metreeca.github.io/http/"
-    },
-    "@metreeca/flow": {
-      "*": "https://metreeca.github.io/flow/"
-    },
-    "typescript": {
-      "Request": "https://developer.mozilla.org/docs/Web/API/Request",
-      "Response": "https://developer.mozilla.org/docs/Web/API/Response",
-      "URL": "https://developer.mozilla.org/docs/Web/API/URL"
     }
   }
 }
