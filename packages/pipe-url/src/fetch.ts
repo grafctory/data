@@ -98,8 +98,9 @@ const logger = log(import.meta.url);
  *
  * > [!WARNING]
  * >
- * > A request stating a URL that is not absolute, or malformed in any other way, is dropped before it is sent, as is
- * > a response stating an unsuccessful status; both are reported to the log, leaving the feed to run to completion.
+ * > A request stating a URL that is not absolute, or malformed in any other way, is dropped before it is sent, and a
+ * > request whose exchange fails, with an unsuccessful status or with no response at all, is dropped once it is sent;
+ * > every drop is reported to the log, leaving the feed to run to completion over the requests that did succeed.
  *
  * @param middlewares The middlewares to be layered over the fetch client, in request processing order
  *
@@ -107,8 +108,7 @@ const logger = log(import.meta.url);
  *
  * @throws {@link !Error Error} If no execution is running, as the fetch client is resolved when the task is created
  *
- * @throws {@link !Error Error} While the feed is consumed, whatever the source reports while producing requests, or
- *                              whatever the exchange reports while connecting to a resource or receiving its response
+ * @throws {@link !Error Error} While the feed is consumed, whatever the source reports while producing requests
  *
  * @see {@link https://developer.mozilla.org/docs/Web/API/Window/fetch `fetch()`}
  *

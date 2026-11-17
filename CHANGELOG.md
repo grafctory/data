@@ -7,11 +7,22 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [0.12.0](https://github.com/metreeca/pipe/compare/v0.11.1...HEAD)
 
+### Changed
+
+- **Breaking**: Upgrade `@metreeca/blue` to `^0.14.0`, `@metreeca/core` to `^0.14.0`, `@metreeca/flow` to `^0.13.0`,
+  `@metreeca/gear` to `^0.5.0`, `@metreeca/http` to `^0.6.0`, `@metreeca/keep` to `^0.13.0`, `@metreeca/qest` to
+  `^0.14.0`, `@metreeca/tape` to `^0.13.0`, `@metreeca/trio` to `^0.3.0` and `@metreeca/wire-sparql` to `^0.13.0`;
+  projects using them alongside these packages raise their own ranges as well, so that each is shared as a single copy
+- **Breaking**: `@metreeca/pipe-url` `fetch()` no longer rejects when an exchange fails without a response, such as on
+  a timeout or a refused connection: the failure is logged and the request dropped, as an unsuccessful status already
+  was, so the feed runs to completion; jobs that relied on the rejection to stop check the log for failed exchanges
+
 ### Security
 
-- Upgrade `vite` to `8.3.5` (GHSA-587h-7wmj-h5pm, GHSA-698v-4r3x-3vcv, GHSA-r825-w8mm-5pxw, GHSA-vfpm-58rq-9qcg, GHSA-rq7h-c2jc-7f22, GHSA-9jrq-w75r-8gcw): development dependency, no consumer impact
-- Upgrade `markdown-it` to `14.3.3` (GHSA-gfr2-rv44-r23c, GHSA-r7fv-28h4-cvq7, GHSA-vfgh-jcmw-g37q): development dependency, no consumer impact
-- Upgrade `vitest` to `4.1.12` (GHSA-qxg6-89mg-rqv8, GHSA-xp26-3454-mjgp): development dependency, no consumer impact
+- Upgrade the `vite`, `vitest` and `markdown-it` development dependencies to `8.3.5`, `4.1.12` and `14.3.3`
+  respectively (GHSA-587h-7wmj-h5pm, GHSA-698v-4r3x-3vcv, GHSA-r825-w8mm-5pxw, GHSA-vfpm-58rq-9qcg,
+  GHSA-rq7h-c2jc-7f22, GHSA-9jrq-w75r-8gcw, GHSA-qxg6-89mg-rqv8, GHSA-xp26-3454-mjgp, GHSA-gfr2-rv44-r23c,
+  GHSA-r7fv-28h4-cvq7, GHSA-vfgh-jcmw-g37q); the published packages are unaffected
 
 ## [0.11.1](https://github.com/metreeca/pipe/compare/v0.11.0...v0.11.1) - 2026-10-20
 

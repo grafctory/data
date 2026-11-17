@@ -344,15 +344,24 @@ describe("fetch", () => {
 
 		});
 
-		it("propagates a transport failure", async () => {
+		it("skips exchanges failing without a response", async () => {
 
-			const { stub } = transport(() => {
-				throw new Error("broken transport"); // told apart from failures raised by the task by its message
+			const { stub } = transport(({ url }) => {
+
+				if ( url.endsWith("/down") ) {
+					throw new Error("broken transport");
+				} else {
+					return new Response("body");
+				}
+
 			});
 
-			const chunks = run(stub, () => fetch()(requests("https://example.com/")));
+			const responses = await run(stub, () => fetch()(requests(
+				"https://example.com/down",
+				"https://example.com/here"
+			)));
 
-			await expect(chunks).rejects.toThrow("broken transport");
+			expect(responses.map(({ status }) => status)).toEqual([200]);
 
 		});
 
