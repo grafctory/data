@@ -7,6 +7,12 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased](https://github.com/metreeca/pipe/compare/v0.12.0...HEAD)
 
+### Changed
+
+- **Breaking**: `@metreeca/pipe-sparql`, `@metreeca/pipe-store` and `@metreeca/pipe-url` take `@metreeca/gear` as a
+  peer dependency, so that an app installs a single copy of it and every task resolves the services bound to the
+  execution the app starts; apps declare `@metreeca/gear` among their own dependencies to run the executor
+
 ## [0.12.0](https://github.com/metreeca/pipe/compare/v0.11.1...v0.12.0) - 2026-11-17
 
 ### Changed
