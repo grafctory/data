@@ -53,12 +53,12 @@
     "@metreeca/tape": "^0.13.0"
   },
   "devDependencies": {
-    "@metreeca/gear": "^0.5.0",
+    "@metreeca/gear": "^0.6.0",
     "@types/node": "^25.9.3",
     "typescript": "^5.9.3",
     "vitest": "^4.1.12"
   },
   "peerDependencies": {
-    "@metreeca/gear": "^0.5.0"
+    "@metreeca/gear": "^0.6.0"
   }
 }
