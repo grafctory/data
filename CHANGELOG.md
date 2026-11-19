@@ -5,9 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres
 to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.13.0](https://github.com/metreeca/pipe/compare/v0.12.0...HEAD)
+## [Unreleased](https://github.com/metreeca/pipe/compare/v0.13.0...HEAD)
+
+## [0.13.0](https://github.com/metreeca/pipe/compare/v0.12.0...v0.13.0) - 2026-11-19
 
 ### Changed
+
+- **Breaking**: Upgrade `@metreeca/gear` to `^0.6.0`; projects using it alongside these packages raise their own range
+  to match as well, so that the executor they start and the services the tasks resolve come from a single copy
 
 - **Breaking**: `@metreeca/pipe-sparql`, `@metreeca/pipe-store` and `@metreeca/pipe-url` take `@metreeca/gear` as a
   peer dependency, so that an app installs a single copy of it and every task resolves the services bound to the
