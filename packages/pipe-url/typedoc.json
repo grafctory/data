@@ -1,13 +1,13 @@
 {
   "externalSymbolLinkMappings": {
-    "@metreeca/core": {
-      "*": "https://metreeca.github.io/core/"
+    "@grafctory/core": {
+      "*": "https://grafctory.github.io/core/"
     },
-    "@metreeca/gear": {
-      "*": "https://metreeca.github.io/gear/"
+    "@grafctory/gear": {
+      "*": "https://grafctory.github.io/gear/"
     },
-    "@metreeca/http": {
-      "*": "https://metreeca.github.io/http/"
+    "@grafctory/http": {
+      "*": "https://grafctory.github.io/http/"
     }
   }
 }

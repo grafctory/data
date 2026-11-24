@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-import type { IRI } from "@metreeca/core/resource";
-import { items } from "@metreeca/flow/feeds";
-import { toArray } from "@metreeca/flow/sinks";
+import type { IRI } from "@grafctory/core/resource";
+import { items } from "@grafctory/flow/feeds";
+import { toArray } from "@grafctory/flow/sinks";
 import { describe, expect, it } from "vitest";
 import { retire } from "./retire.js";
 

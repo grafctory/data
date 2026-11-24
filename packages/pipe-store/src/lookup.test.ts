@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-import { reference } from "@metreeca/blue/reference";
-import { id, multiple, optional, required, resource } from "@metreeca/blue/resource";
-import { string } from "@metreeca/blue/string";
-import type { Frame, Match } from "@metreeca/blue/value";
-import type { Feed } from "@metreeca/flow";
-import { toArray } from "@metreeca/flow/sinks";
-import { bind, executor } from "@metreeca/gear";
-import type { Store } from "@metreeca/keep";
+import { reference } from "@grafctory/blue/reference";
+import { id, multiple, optional, required, resource } from "@grafctory/blue/resource";
+import { string } from "@grafctory/blue/string";
+import type { Frame, Match } from "@grafctory/blue/value";
+import type { Feed } from "@grafctory/flow";
+import { toArray } from "@grafctory/flow/sinks";
+import { bind, executor } from "@grafctory/gear";
+import type { Store } from "@grafctory/keep";
 import { describe, expect, expectTypeOf, it } from "vitest";
 import { createStore } from "./index.js";
 import { lookup } from "./lookup.js";

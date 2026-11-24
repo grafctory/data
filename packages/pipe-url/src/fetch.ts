@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-import type { Task } from "@metreeca/flow";
-import { items } from "@metreeca/flow/feeds";
-import { service } from "@metreeca/gear";
-import { createFetch, type Middleware } from "@metreeca/http";
-import { headers } from "@metreeca/http/headers";
-import { monitor } from "@metreeca/http/monitor";
-import { transport } from "@metreeca/http/transport";
-import { log } from "@metreeca/tape";
+import type { Task } from "@grafctory/flow";
+import { items } from "@grafctory/flow/feeds";
+import { service } from "@grafctory/gear";
+import { createFetch, type Middleware } from "@grafctory/http";
+import { headers } from "@grafctory/http/headers";
+import { monitor } from "@grafctory/http/monitor";
+import { transport } from "@grafctory/http/transport";
+import { log } from "@grafctory/tape";
 
 
 /**
@@ -71,7 +71,7 @@ const logger = log(import.meta.url);
  * is received, with the body left unread for the consumer to draw or discard; a response carrying no body is emitted
  * all the same.
  *
- * Exchanges are routed through the fetch client of the {@link @metreeca/gear!index.executor execution} enclosing the
+ * Exchanges are routed through the fetch client of the {@link @grafctory/gear!index.executor execution} enclosing the
  * call to this factory, so the transport is chosen by the job rather than by the task. Binding {@link createFetch}
  * routes every exchange through a throttled, cached or stubbed client without altering the task. An execution with no
  * binding falls back on the standard `fetch` function.

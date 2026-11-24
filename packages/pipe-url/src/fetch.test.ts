@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-import type { Awaitable } from "@metreeca/core/async";
-import type { Feed } from "@metreeca/flow";
-import { items } from "@metreeca/flow/feeds";
-import { bind, executor } from "@metreeca/gear";
-import { createFetch, type Fetch, type Middleware } from "@metreeca/http";
+import type { Awaitable } from "@grafctory/core/async";
+import type { Feed } from "@grafctory/flow";
+import { items } from "@grafctory/flow/feeds";
+import { bind, executor } from "@grafctory/gear";
+import { createFetch, type Fetch, type Middleware } from "@grafctory/http";
 import { setTimeout as delay } from "node:timers/promises";
 import { describe, expect, it } from "vitest";
 import { fetch } from "./fetch.js";

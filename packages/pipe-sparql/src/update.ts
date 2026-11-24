@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-import { clip, tidy } from "@metreeca/core/strings";
-import { pipe, type Sink } from "@metreeca/flow";
-import { items } from "@metreeca/flow/feeds";
-import { count } from "@metreeca/flow/sinks";
-import { map } from "@metreeca/flow/tasks";
-import { service } from "@metreeca/gear";
-import { log, report, time } from "@metreeca/tape";
-import type { Repository, SPARQL } from "@metreeca/wire-sparql";
+import { clip, tidy } from "@grafctory/core/strings";
+import { pipe, type Sink } from "@grafctory/flow";
+import { items } from "@grafctory/flow/feeds";
+import { count } from "@grafctory/flow/sinks";
+import { map } from "@grafctory/flow/tasks";
+import { service } from "@grafctory/gear";
+import { log, report, time } from "@grafctory/tape";
+import type { Repository, SPARQL } from "@grafctory/wire-sparql";
 import { createRepository } from "./index.js";
 
 

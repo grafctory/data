@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-import type { IRI } from "@metreeca/core/resource";
-import { type Feed, pipe } from "@metreeca/flow";
-import { items } from "@metreeca/flow/feeds";
-import { bind, executor } from "@metreeca/gear";
-import { type Graph, named, triple, type Triple } from "@metreeca/trio";
-import type { Repository, RepositoryClient } from "@metreeca/wire-sparql";
+import type { IRI } from "@grafctory/core/resource";
+import { type Feed, pipe } from "@grafctory/flow";
+import { items } from "@grafctory/flow/feeds";
+import { bind, executor } from "@grafctory/gear";
+import { type Graph, named, triple, type Triple } from "@grafctory/trio";
+import type { Repository, RepositoryClient } from "@grafctory/wire-sparql";
 import { describe, expect, it } from "vitest";
 import { createRepository } from "./index.js";
 import { upload } from "./upload.js";

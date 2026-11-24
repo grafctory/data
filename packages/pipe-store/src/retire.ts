@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-import { assert } from "@metreeca/core";
-import { difference } from "@metreeca/core/arrays";
-import type { IRI } from "@metreeca/core/resource";
-import { type Feed, pipe, type Task } from "@metreeca/flow";
-import { items } from "@metreeca/flow/feeds";
-import { toSet } from "@metreeca/flow/sinks";
-import { chain } from "@metreeca/flow/tasks";
-import { log } from "@metreeca/tape";
+import { assert } from "@grafctory/core";
+import { difference } from "@grafctory/core/arrays";
+import type { IRI } from "@grafctory/core/resource";
+import { type Feed, pipe, type Task } from "@grafctory/flow";
+import { items } from "@grafctory/flow/feeds";
+import { toSet } from "@grafctory/flow/sinks";
+import { chain } from "@grafctory/flow/tasks";
+import { log } from "@grafctory/tape";
 
 
 const logger = log(import.meta.url);

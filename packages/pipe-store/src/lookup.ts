@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-import type { ResourceShape } from "@metreeca/blue/resource";
-import { eager, type Frame, items as frames, type Match, type Model, type Slice } from "@metreeca/blue/value";
-import type { Lazy } from "@metreeca/core";
-import type { Feed } from "@metreeca/flow";
-import { items } from "@metreeca/flow/feeds";
-import { flat, map, trim } from "@metreeca/flow/tasks";
-import { service } from "@metreeca/gear";
-import type { StoreLookup } from "@metreeca/keep";
-import { log, report, time } from "@metreeca/tape";
+import type { ResourceShape } from "@grafctory/blue/resource";
+import { eager, type Frame, items as frames, type Match, type Model, type Slice } from "@grafctory/blue/value";
+import type { Lazy } from "@grafctory/core";
+import type { Feed } from "@grafctory/flow";
+import { items } from "@grafctory/flow/feeds";
+import { flat, map, trim } from "@grafctory/flow/tasks";
+import { service } from "@grafctory/gear";
+import type { StoreLookup } from "@grafctory/keep";
+import { log, report, time } from "@grafctory/tape";
 import { createStore } from "./index.js";
 
 

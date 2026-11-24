@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-import type { Optional } from "@metreeca/core";
-import type { Awaitables } from "@metreeca/core/async";
-import type { Feed } from "@metreeca/flow";
-import { items } from "@metreeca/flow/feeds";
-import { toArray } from "@metreeca/flow/sinks";
-import { filter, flat, map, peek, take } from "@metreeca/flow/tasks";
+import type { Optional } from "@grafctory/core";
+import type { Awaitables } from "@grafctory/core/async";
+import type { Feed } from "@grafctory/flow";
+import { items } from "@grafctory/flow/feeds";
+import { toArray } from "@grafctory/flow/sinks";
+import { filter, flat, map, peek, take } from "@grafctory/flow/tasks";
 import { describe, expect, it } from "vitest";
 import { crawl, type Source } from "./crawl.js";
 

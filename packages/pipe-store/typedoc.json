@@ -1,7 +1,7 @@
 {
   "externalSymbolLinkMappings": {
-    "@metreeca/blue": {
-      "*": "https://metreeca.github.io/blue/"
+    "@grafctory/blue": {
+      "*": "https://grafctory.github.io/blue/"
     }
   }
 }

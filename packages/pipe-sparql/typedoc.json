@@ -1,7 +1,7 @@
 {
   "externalSymbolLinkMappings": {
-    "@metreeca/gear": {
-      "*": "https://metreeca.github.io/gear/"
+    "@grafctory/gear": {
+      "*": "https://grafctory.github.io/gear/"
     }
   }
 }

@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-import type { ResourceShape } from "@metreeca/blue/resource";
-import type { Draft } from "@metreeca/blue/value";
-import type { Lazy } from "@metreeca/core";
-import { immutable } from "@metreeca/core/values";
-import type { Sink } from "@metreeca/flow";
-import { reduce } from "@metreeca/flow/sinks";
-import { service } from "@metreeca/gear";
-import type { StoreClient } from "@metreeca/keep";
-import type { Reference } from "@metreeca/qest/state";
-import { log, report, time } from "@metreeca/tape";
+import type { ResourceShape } from "@grafctory/blue/resource";
+import type { Draft } from "@grafctory/blue/value";
+import type { Lazy } from "@grafctory/core";
+import { immutable } from "@grafctory/core/values";
+import type { Sink } from "@grafctory/flow";
+import { reduce } from "@grafctory/flow/sinks";
+import { service } from "@grafctory/gear";
+import type { StoreClient } from "@grafctory/keep";
+import type { Reference } from "@grafctory/qest/state";
+import { log, report, time } from "@grafctory/tape";
 import { createStore } from "./index.js";
 
 

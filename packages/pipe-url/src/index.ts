@@ -17,8 +17,8 @@
 /**
  * URL processing tasks.
  *
- * Provides ready-made {@link https://github.com/metreeca/flow @metreeca/flow} steps for working with resources
- * identified by URLs in pipelines run by the {@link https://github.com/metreeca/gear @metreeca/gear} executor.
+ * Provides ready-made {@link https://github.com/grafctory/flow @grafctory/flow} steps for working with resources
+ * identified by URLs in pipelines run by the {@link https://github.com/grafctory/gear @grafctory/gear} executor.
  *
  * Each step sends its requests through the fetch client bound in the enclosing execution, so a job can swap in a
  * throttled, cached or stubbed client once and every step in the execution works through that client.

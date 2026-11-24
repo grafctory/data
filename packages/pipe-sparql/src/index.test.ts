@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { executor, service } from "@metreeca/gear";
+import { executor, service } from "@grafctory/gear";
 import { describe, expect, it } from "vitest";
 import { createRepository } from "./index.js";
 

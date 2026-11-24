@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-import { pipe } from "@metreeca/flow";
-import { items } from "@metreeca/flow/feeds";
-import { toArray } from "@metreeca/flow/sinks";
-import { bind, executor } from "@metreeca/gear";
-import { named } from "@metreeca/trio";
-import { type Repository, type SPARQL, type Tuple, tuple } from "@metreeca/wire-sparql";
+import { pipe } from "@grafctory/flow";
+import { items } from "@grafctory/flow/feeds";
+import { toArray } from "@grafctory/flow/sinks";
+import { bind, executor } from "@grafctory/gear";
+import { named } from "@grafctory/trio";
+import { type Repository, type SPARQL, type Tuple, tuple } from "@grafctory/wire-sparql";
 import { describe, expect, it } from "vitest";
 import { createRepository } from "./index.js";
 import { select } from "./select.js";

@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-import { pipe } from "@metreeca/flow";
-import { items } from "@metreeca/flow/feeds";
-import { bind, executor } from "@metreeca/gear";
-import type { Repository, SPARQL } from "@metreeca/wire-sparql";
+import { pipe } from "@grafctory/flow";
+import { items } from "@grafctory/flow/feeds";
+import { bind, executor } from "@grafctory/gear";
+import type { Repository, SPARQL } from "@grafctory/wire-sparql";
 import { describe, expect, it } from "vitest";
 import { createRepository } from "./index.js";
 import { update } from "./update.js";

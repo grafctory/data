@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-import { required, resource } from "@metreeca/blue/resource";
-import { string } from "@metreeca/blue/string";
-import { items } from "@metreeca/flow/feeds";
-import { bind, executor } from "@metreeca/gear";
-import type { Store, StoreClient } from "@metreeca/keep";
+import { required, resource } from "@grafctory/blue/resource";
+import { string } from "@grafctory/blue/string";
+import { items } from "@grafctory/flow/feeds";
+import { bind, executor } from "@grafctory/gear";
+import type { Store, StoreClient } from "@grafctory/keep";
 import { describe, expect, it } from "vitest";
 import { createStore } from "./index.js";
 import { delta, type Delta, settle } from "./settle.js";

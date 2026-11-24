@@ -1,7 +1,7 @@
 {
-  "name": "@metreeca/pipe-url",
+  "name": "@grafctory/pipe-url",
   "version": "0.14.1",
-  "description": "URL processing tasks for @metreeca/pipe.",
+  "description": "URL processing tasks for @grafctory/pipe.",
   "keywords": [
     "typescript",
     "pipeline",
@@ -9,9 +9,9 @@
     "data-integration",
     "url"
   ],
-  "homepage": "https://metreeca.github.io/pipe/",
+  "homepage": "https://grafctory.github.io/pipe/",
   "bugs": {
-    "url": "https://github.com/metreeca/pipe/issues",
+    "url": "https://github.com/grafctory/pipe/issues",
     "email": "info@metreeca.com"
   },
   "license": "Apache-2.0",
@@ -22,14 +22,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/metreeca/pipe.git",
+    "url": "git+https://github.com/grafctory/pipe.git",
     "directory": "packages/pipe-url"
   },
   "type": "module",
   "sideEffects": false,
   "exports": {
     ".": {
-      "@metreeca/source": "./src/index.ts",
+      "@grafctory/source": "./src/index.ts",
       "default": "./dist/index.js"
     }
   },
@@ -47,18 +47,18 @@
     "check": "npx vitest --typecheck run"
   },
   "dependencies": {
-    "@metreeca/core": "^0.14.0",
-    "@metreeca/flow": "^0.13.0",
-    "@metreeca/http": "^0.6.0",
-    "@metreeca/tape": "^0.13.0"
+    "@grafctory/core": "^0.14.0",
+    "@grafctory/flow": "^0.13.0",
+    "@grafctory/http": "^0.6.0",
+    "@grafctory/tape": "^0.13.0"
   },
   "devDependencies": {
-    "@metreeca/gear": "^0.6.0",
+    "@grafctory/gear": "^0.6.0",
     "@types/node": "^25.9.3",
     "typescript": "^6.0.3",
     "vitest": "^4.1.12"
   },
   "peerDependencies": {
-    "@metreeca/gear": "^0.6.0"
+    "@grafctory/gear": "^0.6.0"
   }
 }

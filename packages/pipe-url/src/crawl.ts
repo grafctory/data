@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-import type { Optional, URLLike } from "@metreeca/core";
-import type { Awaitable, Awaitables } from "@metreeca/core/async";
-import type { Task } from "@metreeca/flow";
-import { items } from "@metreeca/flow/feeds";
+import type { Optional, URLLike } from "@grafctory/core";
+import type { Awaitable, Awaitables } from "@grafctory/core/async";
+import type { Task } from "@grafctory/flow";
+import { items } from "@grafctory/flow/feeds";
 
 
 /**

@@ -17,16 +17,16 @@
 /**
  * Store processing tasks.
  *
- * Provides ready-made {@link https://github.com/metreeca/flow @metreeca/flow} steps for working with
- * {@link https://github.com/metreeca/keep @metreeca/keep} stores in pipelines run by the
- * {@link https://github.com/metreeca/gear @metreeca/gear} executor.
+ * Provides ready-made {@link https://github.com/grafctory/flow @grafctory/flow} steps for working with
+ * {@link https://github.com/grafctory/keep @grafctory/keep} stores in pipelines run by the
+ * {@link https://github.com/grafctory/gear @grafctory/gear} executor.
  *
  * A job binds a store connector to {@link createStore} once, and every step that needs a store uses that one.
  *
  * @module index
  */
 
-import type { Store } from "@metreeca/keep";
+import type { Store } from "@grafctory/keep";
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

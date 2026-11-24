@@ -17,8 +17,8 @@
 /**
  * SPARQL processing tasks.
  *
- * Provides ready-made {@link https://github.com/metreeca/flow @metreeca/flow} steps for working with SPARQL
- * repositories in pipelines run by the {@link https://github.com/metreeca/gear @metreeca/gear} executor.
+ * Provides ready-made {@link https://github.com/grafctory/flow @grafctory/flow} steps for working with SPARQL
+ * repositories in pipelines run by the {@link https://github.com/grafctory/gear @grafctory/gear} executor.
  *
  * A job binds a repository connector to {@link createRepository} once, and steps use that one unless given their own.
  *
@@ -27,7 +27,7 @@
  * @see {@link https://www.w3.org/TR/sparql11-overview/ SPARQL 1.1 Overview}
  */
 
-import type { Repository } from "@metreeca/wire-sparql";
+import type { Repository } from "@grafctory/wire-sparql";
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
