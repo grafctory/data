@@ -1,12 +1,21 @@
 # @grafctory/pipe-store
 
-[![npm](https://img.shields.io/npm/v/@grafctory/pipe-store)](https://www.npmjs.com/package/@grafctory/pipe-store)
+[![npm][npm-badge]][npm] [![Grafctory][grafctory-badge]][grafctory]
 
-Store processing tasks for [@grafctory/pipe](https://github.com/grafctory/pipe).
+[npm-badge]: https://img.shields.io/npm/v/@grafctory/pipe-store
+[npm]: https://www.npmjs.com/package/@grafctory/pipe-store
+[grafctory-badge]: https://img.shields.io/badge/part%20of-Grafctory-blue
+[grafctory]: https://github.com/grafctory
 
-Provides ready-made [@grafctory/flow](https://github.com/grafctory/flow) steps for working with
-[@grafctory/keep](https://github.com/grafctory/keep) stores in pipelines run by the
-[@grafctory/gear](https://github.com/grafctory/gear) job executor.
+Store processing tasks for [@grafctory/pipe].
+
+Provides ready-made [@grafctory/flow] steps for working with [@grafctory/keep] stores in pipelines run by the
+[@grafctory/gear] job executor.
+
+[@grafctory/pipe]: https://github.com/grafctory/pipe
+[@grafctory/flow]: https://github.com/grafctory/flow
+[@grafctory/keep]: https://github.com/grafctory/keep
+[@grafctory/gear]: https://github.com/grafctory/gear
 
 # Installation
 
@@ -53,3 +62,5 @@ or sink in the execution then reads from or writes to the store that connector r
 
 This project is licensed under the Apache 2.0 License –
 see [LICENSE](https://github.com/grafctory/pipe?tab=Apache-2.0-1-ov-file) file for details.
+
+<sub>Grafctory™ is a trademark of Metreeca srl.</sub>

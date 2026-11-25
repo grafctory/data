@@ -2,10 +2,11 @@
 
 Ready-made tasks for retrieving and persisting data from external sources.
 
-**@grafctory/pipe** provides ready-made [@grafctory/flow](https://github.com/grafctory/flow) tasks for moving content
-between a pipeline and the systems it works with: drawing records out of web pages, object stores and databases, and
-writing results back to them. The tasks run under the [@grafctory/gear](https://github.com/grafctory/gear) job executor,
-which supplies the shared services they draw on, including the clients and connection pools of the systems they reach.
+**@grafctory/pipe** is the data access module of the [Grafctory][grafctory] model-driven knowledge graph framework. It
+provides ready-made [@grafctory/flow] tasks for moving content between a pipeline and the systems it works with: drawing
+records out of web pages, object stores and databases, and writing results back to them. The tasks run under the
+[@grafctory/gear] job executor, which supplies the shared services they draw on, including the clients and connection
+pools of the systems they reach.
 
 - **Ready-Made Tasks**: retrieval and persistence, chaining alongside any other task
 - **Shared Services**: clients, credentials and connection pools, built on demand and released after the run
@@ -16,6 +17,10 @@ which supplies the shared services they draw on, including the clients and conne
 >
 > Pipelines are server-side workloads targeting [Node.js](https://nodejs.org/) 22 or later, relying on facilities such
 > as the filesystem, the process environment and `fetch`. The packages are not intended for the browser.
+
+[@grafctory/flow]: https://github.com/grafctory/flow
+[@grafctory/gear]: https://github.com/grafctory/gear
+[grafctory]: https://github.com/grafctory
 
 # Installation
 
@@ -30,7 +35,7 @@ npm install @grafctory/pipe-<source>   # task package, one per source family
 > The legacy `"node"` resolver is not supported.
 
 Add a task package for each source family the pipeline reaches. Source packages are self-contained leaves, each pulling
-in only the drivers its own family needs. The job executor comes from [@grafctory/gear](https://github.com/grafctory/gear),
+in only the drivers its own family needs. The job executor comes from [@grafctory/gear],
 which the task packages pull in transitively; install it directly to set up and run a job.
 
 | Package                 | Description             |
@@ -61,3 +66,5 @@ which the task packages pull in transitively; install it directly to set up and 
 
 This project is licensed under the Apache 2.0 License –
 see [LICENSE](https://github.com/grafctory/pipe?tab=Apache-2.0-1-ov-file) file for details.
+
+<sub>Grafctory™ is a trademark of Metreeca srl.</sub>

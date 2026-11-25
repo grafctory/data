@@ -1,11 +1,20 @@
 # @grafctory/pipe-url
 
-[![npm](https://img.shields.io/npm/v/@grafctory/pipe-url)](https://www.npmjs.com/package/@grafctory/pipe-url)
+[![npm][npm-badge]][npm] [![Grafctory][grafctory-badge]][grafctory]
 
-URL processing tasks for [@grafctory/pipe](https://github.com/grafctory/pipe).
+[npm-badge]: https://img.shields.io/npm/v/@grafctory/pipe-url
+[npm]: https://www.npmjs.com/package/@grafctory/pipe-url
+[grafctory-badge]: https://img.shields.io/badge/part%20of-Grafctory-blue
+[grafctory]: https://github.com/grafctory
 
-Provides ready-made [@grafctory/flow](https://github.com/grafctory/flow) steps for working with resources identified by
-URLs in pipelines run by the [@grafctory/gear](https://github.com/grafctory/gear) job executor.
+URL processing tasks for [@grafctory/pipe].
+
+Provides ready-made [@grafctory/flow] steps for working with resources identified by URLs in pipelines run by the
+[@grafctory/gear] job executor.
+
+[@grafctory/pipe]: https://github.com/grafctory/pipe
+[@grafctory/flow]: https://github.com/grafctory/flow
+[@grafctory/gear]: https://github.com/grafctory/gear
 
 # Installation
 
@@ -43,3 +52,5 @@ npm install @grafctory/pipe-url  # this package
 
 This project is licensed under the Apache 2.0 License –
 see [LICENSE](https://github.com/grafctory/pipe?tab=Apache-2.0-1-ov-file) file for details.
+
+<sub>Grafctory™ is a trademark of Metreeca srl.</sub>

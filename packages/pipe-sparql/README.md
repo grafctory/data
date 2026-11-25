@@ -1,11 +1,21 @@
 # @grafctory/pipe-sparql
 
-[![npm](https://img.shields.io/npm/v/@grafctory/pipe-sparql)](https://www.npmjs.com/package/@grafctory/pipe-sparql)
+[![npm][npm-badge]][npm] [![Grafctory][grafctory-badge]][grafctory]
 
-SPARQL processing tasks for [@grafctory/pipe](https://github.com/grafctory/pipe).
+[npm-badge]: https://img.shields.io/npm/v/@grafctory/pipe-sparql
+[npm]: https://www.npmjs.com/package/@grafctory/pipe-sparql
+[grafctory-badge]: https://img.shields.io/badge/part%20of-Grafctory-blue
+[grafctory]: https://github.com/grafctory
 
-Provides ready-made [@grafctory/flow](https://github.com/grafctory/flow) steps for working with SPARQL repositories in
-pipelines run by the [@grafctory/gear](https://github.com/grafctory/gear) job executor.
+SPARQL processing tasks for [@grafctory/pipe].
+
+Provides ready-made [@grafctory/flow] steps for working with SPARQL repositories in
+pipelines run by the [@grafctory/gear] job executor.
+
+[@grafctory/pipe]: https://github.com/grafctory/pipe
+[@grafctory/flow]: https://github.com/grafctory/flow
+[@grafctory/gear]: https://github.com/grafctory/gear
+[@grafctory/wire-sparql]: https://grafctory.github.io/wire/modules/_grafctory_wire-sparql.html
 
 # Installation
 
@@ -25,7 +35,7 @@ npm install @grafctory/wire-sparql-<backend>      # repository connector for the
 > The legacy `"node"` resolver is not supported.
 
 Repositories are reached through the backend connectors listed by
-[@grafctory/wire-sparql](https://grafctory.github.io/wire/modules/_grafctory_wire-sparql.html): install the one for the
+[@grafctory/wire-sparql]: install the one for the
 engine the pipeline targets, together with any peer dependency that the connector itself requires.
 
 # Usage
@@ -59,3 +69,5 @@ once, and every task or sink given no repository of its own then reads from or w
 
 This project is licensed under the Apache 2.0 License –
 see [LICENSE](https://github.com/grafctory/pipe?tab=Apache-2.0-1-ov-file) file for details.
+
+<sub>Grafctory™ is a trademark of Metreeca srl.</sub>
