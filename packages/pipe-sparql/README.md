@@ -34,8 +34,7 @@ npm install @grafctory/wire-sparql-<backend>      # repository connector for the
 > TypeScript consumers must use `"moduleResolution": "nodenext"/"node16"/"bundler"` in `tsconfig.json`.
 > The legacy `"node"` resolver is not supported.
 
-Repositories are reached through the backend connectors listed by
-[@grafctory/wire-sparql]: install the one for the
+Repositories are reached through the backend connectors listed by [@grafctory/wire-sparql]: install the one for the
 engine the pipeline targets, together with any peer dependency that the connector itself requires.
 
 # Usage
