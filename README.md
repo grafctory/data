@@ -21,7 +21,6 @@ supplies the clients, credentials and connection pools each source requires and 
 [@grafctory/gear]: https://github.com/grafctory/gear
 [grafctory]: https://github.com/grafctory
 
-# Installation
 
 ```shell
 npm install @grafctory/gear            # job executor and shared services
