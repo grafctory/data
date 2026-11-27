@@ -1,6 +1,6 @@
 {
   "private": true,
-  "version": "0.16.0",
+  "version": "0.16.1",
   "description": "Ready-made tasks for reading and writing data in external sources.",
   "keywords": [
     "typescript",

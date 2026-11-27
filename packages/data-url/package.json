@@ -1,6 +1,6 @@
 {
   "name": "@grafctory/data-url",
-  "version": "0.16.0",
+  "version": "0.16.1",
   "description": "URL processing tasks for @grafctory/data.",
   "keywords": [
     "typescript",
