@@ -3,10 +3,10 @@
     "packages/*"
   ],
   "entryPointStrategy": "packages",
-  "name": "@grafctory/pipe",
+  "name": "@grafctory/data",
   "out": "docs",
   "readme": "README.md",
-  "hostedBaseUrl": "https://grafctory.github.io/pipe/",
+  "hostedBaseUrl": "https://grafctory.github.io/data/",
   "useFirstParagraphOfCommentAsSummary": true,
   "favicon": "https://www.metreeca.com/200.svg",
   "sourceLinkExternal": true,
@@ -23,7 +23,7 @@
     }
   },
   "navigationLinks": {
-    "GitHub": "https://github.com/grafctory/pipe"
+    "GitHub": "https://github.com/grafctory/data"
   },
   "githubPages": false,
   "hideGenerator": true,

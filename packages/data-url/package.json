@@ -1,18 +1,17 @@
 {
-  "name": "@grafctory/pipe-sparql",
+  "name": "@grafctory/data-url",
   "version": "0.15.0",
-  "description": "SPARQL processing tasks for @grafctory/pipe.",
+  "description": "URL processing tasks for @grafctory/data.",
   "keywords": [
     "typescript",
     "pipeline",
     "etl",
     "data-integration",
-    "rdf",
-    "sparql"
+    "url"
   ],
-  "homepage": "https://grafctory.github.io/pipe/",
+  "homepage": "https://grafctory.github.io/data/",
   "bugs": {
-    "url": "https://github.com/grafctory/pipe/issues",
+    "url": "https://github.com/grafctory/data/issues",
     "email": "info@grafctory.dev"
   },
   "license": "Apache-2.0",
@@ -23,8 +22,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/grafctory/pipe.git",
-    "directory": "packages/pipe-sparql"
+    "url": "git+https://github.com/grafctory/data.git",
+    "directory": "packages/data-url"
   },
   "type": "module",
   "sideEffects": false,
@@ -50,9 +49,8 @@
   "dependencies": {
     "@grafctory/core": "^0.14.0",
     "@grafctory/flow": "^0.13.0",
-    "@grafctory/tape": "^0.13.0",
-    "@grafctory/trio": "^0.3.0",
-    "@grafctory/wire-sparql": "^0.13.0"
+    "@grafctory/http": "^0.6.0",
+    "@grafctory/tape": "^0.13.0"
   },
   "devDependencies": {
     "@grafctory/gear": "^0.6.0",

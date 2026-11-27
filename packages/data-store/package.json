@@ -1,17 +1,18 @@
 {
-  "name": "@grafctory/pipe-url",
+  "name": "@grafctory/data-store",
   "version": "0.15.0",
-  "description": "URL processing tasks for @grafctory/pipe.",
+  "description": "Store processing tasks for @grafctory/data.",
   "keywords": [
     "typescript",
     "pipeline",
     "etl",
     "data-integration",
-    "url"
+    "linked-data",
+    "storage"
   ],
-  "homepage": "https://grafctory.github.io/pipe/",
+  "homepage": "https://grafctory.github.io/data/",
   "bugs": {
-    "url": "https://github.com/grafctory/pipe/issues",
+    "url": "https://github.com/grafctory/data/issues",
     "email": "info@grafctory.dev"
   },
   "license": "Apache-2.0",
@@ -22,8 +23,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/grafctory/pipe.git",
-    "directory": "packages/pipe-url"
+    "url": "git+https://github.com/grafctory/data.git",
+    "directory": "packages/data-store"
   },
   "type": "module",
   "sideEffects": false,
@@ -47,9 +48,11 @@
     "check": "npx vitest --typecheck run"
   },
   "dependencies": {
+    "@grafctory/blue": "^0.16.0",
     "@grafctory/core": "^0.14.0",
     "@grafctory/flow": "^0.13.0",
-    "@grafctory/http": "^0.6.0",
+    "@grafctory/keep": "^0.15.0",
+    "@grafctory/qest": "^0.15.0",
     "@grafctory/tape": "^0.13.0"
   },
   "devDependencies": {

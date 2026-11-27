@@ -11,8 +11,8 @@
 
 # Overview
 
-`@grafctory/pipe` is a standalone, general-purpose monorepo collecting source family task packages, each sitting directly
-under `packages/` (for example `packages/pipe-sql/`).
+`@grafctory/data` is a standalone, general-purpose monorepo collecting source family task packages, each sitting directly
+under `packages/` (for example `packages/data-sql/`).
 
 Jobs run under the `@grafctory/gear` executor: this repository contributes retrieval and persistence tasks, **NEVER** an
 execution runtime of its own. Reach for `executor`, `bind` and `service` from `@grafctory/gear` rather than
@@ -49,10 +49,10 @@ what they carry sits on the other side of it.
 # Package Layout
 
 The root `package.json` `workspaces` glob (`packages/*`) covers the task packages, each in its own directory immediately
-under `packages/` (for example `packages/pipe-url`).
+under `packages/` (for example `packages/data-url`).
 
 Source packages are self-contained leaves named after the family of systems they reach, not after the driver they reach
-it with: `pipe-sql`, not `pipe-postgres` or `pipe-knex`. Each pulls in only the drivers its own family needs.
+it with: `data-sql`, not `data-postgres` or `data-knex`. Each pulls in only the drivers its own family needs.
 
 Retrieval and persistence live together in the package for the family they address: the split follows the system a task
 talks to, not the direction the content moves in.
@@ -94,6 +94,6 @@ An export entry lacking the condition falls back to `dist` as well, and tests th
 # Version Management
 
 All workspace packages share the root `package.json` version. Beyond the `version` fields the release flow already
-cascades, update the internal `@grafctory/pipe*` dependency ranges in every `packages/**/package.json` to match.
+cascades, update the internal `@grafctory/data*` dependency ranges in every `packages/**/package.json` to match.
 
 When adding, removing, or renaming packages, update the package table in the root `README.md` Installation section to match.

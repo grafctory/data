@@ -32,7 +32,7 @@ export default defineConfig({
 
 		typecheck: {
 			include: ["**/src/**/*.test-d.ts"],
-			tsconfig: "packages/pipe-url/tsconfig.json"
+			tsconfig: "packages/data-url/tsconfig.json"
 		}
 
 	}

@@ -1,7 +1,7 @@
 {
   "private": true,
   "version": "0.15.0",
-  "description": "Ready-made tasks for retrieving and persisting data from external sources.",
+  "description": "Ready-made tasks for reading and writing data in external sources.",
   "keywords": [
     "typescript",
     "pipeline",

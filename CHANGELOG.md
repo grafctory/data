@@ -8,9 +8,15 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 > [!NOTE]
 > Packages published under the `@grafctory` scope from version 0.14.1; earlier versions were published under `@metreeca`.
 
-## [Unreleased](https://github.com/grafctory/pipe/compare/v0.15.0...HEAD)
+## [Unreleased](https://github.com/grafctory/data/compare/v0.15.0...HEAD)
 
-## [0.15.0](https://github.com/grafctory/pipe/compare/v0.14.1...v0.15.0) - 2026-11-26
+### Changed
+
+- **Breaking**: packages renamed from `@grafctory/pipe-*` to `@grafctory/data-*` (`@grafctory/data-url`,
+  `@grafctory/data-store` and `@grafctory/data-sparql`), with the repository moving to `grafctory/data`; projects
+  replace the dependency and update their imports, which keep the same members
+
+## [0.15.0](https://github.com/grafctory/data/compare/v0.14.1...v0.15.0) - 2026-11-26
 
 ### Changed
 
@@ -21,20 +27,20 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   member `optional()` in the shape where an empty value is legitimate
 - READMEs introduce the packages as part of the Grafctory framework, and bug reports by email go to `info@grafctory.dev`
 
-## [0.14.1](https://github.com/grafctory/pipe/compare/v0.14.0...v0.14.1) - 2026-11-24
+## [0.14.1](https://github.com/grafctory/data/compare/v0.14.0...v0.14.1) - 2026-11-24
 
 ### Changed
 
 - Maintenance release with no change to the published API or behaviour
 
-## [0.14.0](https://github.com/grafctory/pipe/compare/v0.13.0...v0.14.0) - 2026-11-19
+## [0.14.0](https://github.com/grafctory/data/compare/v0.13.0...v0.14.0) - 2026-11-19
 
 ### Changed
 
 - **Breaking**: Upgrade `@metreeca/blue` to `^0.15.0`, `@metreeca/keep` to `^0.14.0` and `@metreeca/qest` to `^0.15.0`;
   projects using them alongside these packages raise their own ranges as well, so that each is shared as a single copy
 
-## [0.13.0](https://github.com/grafctory/pipe/compare/v0.12.0...v0.13.0) - 2026-11-19
+## [0.13.0](https://github.com/grafctory/data/compare/v0.12.0...v0.13.0) - 2026-11-19
 
 ### Changed
 
@@ -45,7 +51,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   peer dependency, so that an app installs a single copy of it and every task resolves the services bound to the
   execution the app starts; apps declare `@metreeca/gear` among their own dependencies to run the executor
 
-## [0.12.0](https://github.com/grafctory/pipe/compare/v0.11.1...v0.12.0) - 2026-11-17
+## [0.12.0](https://github.com/grafctory/data/compare/v0.11.1...v0.12.0) - 2026-11-17
 
 ### Changed
 
@@ -64,13 +70,13 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   GHSA-rq7h-c2jc-7f22, GHSA-9jrq-w75r-8gcw, GHSA-qxg6-89mg-rqv8, GHSA-xp26-3454-mjgp, GHSA-gfr2-rv44-r23c,
   GHSA-r7fv-28h4-cvq7, GHSA-vfgh-jcmw-g37q); the published packages are unaffected
 
-## [0.11.1](https://github.com/grafctory/pipe/compare/v0.11.0...v0.11.1) - 2026-10-20
+## [0.11.1](https://github.com/grafctory/data/compare/v0.11.0...v0.11.1) - 2026-10-20
 
 ### Fixed
 
 - Publish `@metreeca/pipe-url` with the `0.11.0` content, which the registry refused under that version
 
-## [0.11.0](https://github.com/grafctory/pipe/compare/v0.10.1...v0.11.0) - 2026-10-20
+## [0.11.0](https://github.com/grafctory/data/compare/v0.10.1...v0.11.0) - 2026-10-20
 
 ### Added
 
@@ -85,7 +91,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Upgrade `@metreeca/http` to `^0.5.0`
 - Upgrade `@metreeca/tape` to `^0.12.0`
 
-## [0.10.1](https://github.com/grafctory/pipe/compare/v0.10.0...v0.10.1) - 2026-10-14
+## [0.10.1](https://github.com/grafctory/data/compare/v0.10.0...v0.10.1) - 2026-10-14
 
 ### Changed
 
@@ -95,7 +101,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Upgrade `@metreeca/http` to `^0.4.1`
 - Upgrade `@metreeca/tape` to `^0.11.1`
 
-## [0.10.0](https://github.com/grafctory/pipe/releases/tag/v0.10.0) - 2026-10-01
+## [0.10.0](https://github.com/grafctory/data/releases/tag/v0.10.0) - 2026-10-01
 
 Initial release of the source family task packages, running under the `@metreeca/gear` job executor.
 

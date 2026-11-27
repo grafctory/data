@@ -1,13 +1,13 @@
 ---
 name: "Bug Report"
 about: "Create a report to help us improve"
-title: "What's wrong with @grafctory/pipe?"
+title: "What's wrong with @grafctory/data?"
 type: "Bug"
 ---
 
 **environment**
 
-- @grafctory/pipe-*: *package/version*
+- @grafctory/data-*: *package/version*
 - typescript: *version*
 - node.js: *version*
 - operating system: *name/version*
